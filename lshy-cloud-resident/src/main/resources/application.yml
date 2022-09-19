@@ -1,0 +1,21 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: resident
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 42.193.97.35:8848 #配置Nacos地址
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://bj-cynosdbmysql-grp-i8deql04.sql.tencentcdb.com:22362/myproperty?serverTimezone=GMT%2B8&verifyServerCertificate=false&useSSL=false
+    username: shay
+    password: 666381xX
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
